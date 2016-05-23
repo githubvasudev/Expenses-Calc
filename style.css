@@ -1,0 +1,30 @@
+/* Styles go here */
+
+/* Styles go here */
+li {
+  list-style-type: none;
+}
+.phoneDetailSection {
+  border: 1px solid green;
+  margin-top: 10px;
+  padding: 5px;
+}
+a {
+  text-decoration: none;
+  /* color: green; */
+  font-weight: bold;
+  background: #99ffcc;
+}
+table, td, th  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+         
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
