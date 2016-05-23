@@ -1,0 +1,38 @@
+[
+    {
+        "date": "yesterday",
+        "amount":"",
+        "givenBy": "Vasu", 
+        "givenTo": "Vasu Mani Suri Arun", 
+        "Vasu":"10",
+        "Mani":"10",
+        "Suri":"10",
+        "Arun":"10",
+        "reason": "Rice", 
+        "others": "Shared equally"
+    }, 
+    {
+        "date": "today", 
+        "amount":"",
+        "givenBy": "Suri", 
+        "givenTo": "Vasu Suri Mani",
+        "Vasu":"10",
+        "Mani":"10",
+        "Suri":"10",
+        "Arun":"0",
+        "reason": "Milk", 
+        "others": ""
+    }, 
+    {
+        "date": "lastday", 
+        "amount":"",
+        "givenBy": "Arun", 
+        "givenTo": "Mani Suri Vasu", 
+        "Vasu":"10",
+        "Mani":"10",
+        "Suri":"10",
+        "Arun":"10",
+        "reason": "Egg", 
+        "others": ""
+    }
+]
