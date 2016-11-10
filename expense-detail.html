@@ -1,0 +1,37 @@
+<div>
+<form ng-submit="submitExpenses()">
+Date:
+  <input type="date"  ng-model="date" name="date" /><br>
+  Amount:
+  <input type="input"  ng-model="amount" name="amount" /><br>
+  Given By&nbsp;&nbsp;&nbsp;: 
+  <select ng-model="givenBy" ng-options="mate.name for mate in mates"><option value="">-- choose name --</option></select><br>
+  Given To&nbsp;&nbsp;&nbsp;: 
+<div ng-repeat="mate in mates">
+  <div class="action-checkbox">
+    <input id="{{mate.name}}" type="checkbox" value="{{mate.name}}" ng-checked="selection.indexOf(mate.name) > -1" ng-click="toggleSelection(mate.name)"/>
+    <label for="{{mate.name}}"></label>
+    {{mate.name}}
+  </div>
+</div>
+
+  Reason&nbsp;&nbsp;&nbsp;: 
+  <input ng-model="reason" name="reason" type="text" /><br>
+  Other&nbsp;&nbsp;&nbsp;: 
+  <input ng-model="other" name="other" type="text" /><br>
+  <input type="submit" id="submit" value="Submit" />
+</form>
+<table>
+   <thead>
+    <tr ng-repeat="transaction in ed.transactions|limitTo:1">
+      <th ng-repeat="(key,value) in transaction">{{key}}</th>
+    </tr>
+  </thead>
+    <tbody>
+    <tr ng-repeat="transaction in ed.transactions">
+      <td ng-repeat="(key,value) in transaction">{{value}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<a href="#/login">Back</a>
