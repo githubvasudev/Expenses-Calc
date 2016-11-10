@@ -1,0 +1,13 @@
+<div class="container-fluid">
+<table>
+  <tr ng-repeat="transaction in tl.transactions|limitTo:1">
+    <th ng-repeat="(key,value) in transaction">{{key}}</th>
+  </tr>
+  <tbody>
+  <tr  ng-repeat="transaction in tl.transactions">
+    <td ng-repeat="(key,value) in transaction">{{ value }}</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+<a href="#/login">Back</a>
